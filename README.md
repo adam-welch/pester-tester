@@ -5,7 +5,9 @@ Simple playground for me to test using pester as a unit test framework for terra
 
 I also have been bitten when doing this using the hashicorp terraform plan way on the Microsoft site, https://learn.microsoft.com/en-us/azure/developer/terraform/test-modules-using-terratest, as needed to use dep to pull the dependecies which in turn sent antivirus software all over the place with some of the files being pulled down, like bomb.zip :( so this keeps it more lightweight for my use case.
 
+I will turn the powershell functions in to a module at some point also, but need to make my powershell a bit more robust first.
+
 ## Shout Out
 Everywhere I find useful examples of either testing, pester etc which I may or may not use a part of I will put a mention here"
 
-### https://github.com/actions/runner-images
+- https://github.com/actions/runner-images - makes extensive use of pester when building the ADO\ github actions agents
