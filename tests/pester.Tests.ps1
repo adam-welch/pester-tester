@@ -18,7 +18,7 @@ Describe "Terraform Plan Validation" {
 
   It "Azure Storage Account min_tls_version should be set to 'TLS1_2'" {
       $storageAccount = $resources | Where-Object { $_.type -eq "azurerm_storage_account" -and $_.name -eq "main" }
-      $storageAccount.values.min_tls_version | Should -Be "TLS1_1"
+      $storageAccount.values.min_tls_version | Should -Be "TLS1_2"
   }
 
   It "Should have an Azure Resource Group with the name 'testwebsiteaaa-staging-rg'" {
